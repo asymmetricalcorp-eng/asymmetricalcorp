@@ -1,10 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#0a0a0f"/>
-  <text x="3" y="24" font-family="monospace" font-size="22" font-weight="bold" fill="url(#g)">A</text>
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#6c5ce7"/>
       <stop offset="100%" stop-color="#00d4ff"/>
     </linearGradient>
+    <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#6c5ce7"/>
+    </linearGradient>
   </defs>
+
+  <!-- Dark background with rounded corners -->
+  <rect width="32" height="32" rx="6" fill="#0a0a0f"/>
+
+  <!-- Asymmetric C - top arm thick/blunt, bottom arm thin/extended -->
+  <path
+    d="
+      M 22.5 8.2
+      C 20 6.5, 17 5.8, 14 6.2
+      C 10 7, 7 10, 6.2 14
+      C 5.4 18, 5.8 22, 7.8 25.2
+      C 9.8 28.2, 13 29.6, 17 29.4
+      C 19 29.3, 21 28.6, 23.5 27
+      L 22 25.6
+      C 20.2 26.8, 18.4 27.4, 16.6 27.4
+      C 13.2 27.6, 10.6 26, 9 23.8
+      C 7.2 21.2, 6.6 17.8, 7.4 14.6
+      C 8.2 11.4, 10.2 9, 13.2 8.2
+      C 15.6 7.6, 18 8, 20 9.2
+      Z
+    "
+    fill="url(#g)"
+  />
+
+  <!-- Thick top arm terminator -->
+  <rect x="20" y="7" width="4.5" height="3.2" rx="0.8" fill="url(#g)" transform="rotate(-30, 22, 8.5)"/>
+
+  <!-- Thin extended bottom arm -->
+  <path d="M 21.8 25.4 L 26 24 L 25.8 25.2 L 21.8 26.4 Z" fill="url(#g2)"/>
+
+  <!-- Tech detail dots -->
+  <circle cx="25.5" cy="6.8" r="0.8" fill="#00d4ff" opacity="0.8"/>
+  <circle cx="27" cy="6" r="0.5" fill="#6c5ce7" opacity="0.6"/>
+
+  <!-- Disruption lines on left curve -->
+  <path d="M 5.8 16 L 8.8 15.7" stroke="#00d4ff" stroke-width="0.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 5.6 17.5 L 9.4 17.1" stroke="#00d4ff" stroke-width="0.4" stroke-linecap="round" opacity="0.4"/>
 </svg>

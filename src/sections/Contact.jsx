@@ -20,7 +20,7 @@ export default function Contact() {
           <span className="section-tag">// CONTACTO</span>
           <h2 className="section-title">Hablemos del <span className="gradient-text">Futuro</span></h2>
           <p className="section-desc">
-            Agenda una demo personalizada y descubre como Asymmetrical puede transformar tu empresa.
+            Agenda una demo personalizada y descubre como Asymmetricalcorp puede transformar tu empresa.
           </p>
         </div>
 

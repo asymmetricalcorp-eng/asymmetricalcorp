@@ -7,9 +7,8 @@ export default function Footer() {
         <div className="footer__grid">
           <div className="footer__brand">
             <a href="#hero" className="footer__logo">
-              <span className="footer__bracket">[</span>
-              <span className="footer__logo-text">ASYMMETRICAL CORP</span>
-              <span className="footer__bracket">]</span>
+              <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="" className="footer__logo-icon" />
+              <span className="footer__logo-text">ASYMMETRICALCORP</span>
             </a>
             <p className="footer__tagline">Technology & Innovation</p>
             <p className="footer__philosophy">
@@ -35,7 +34,7 @@ export default function Footer() {
         </div>
 
         <div className="footer__bottom">
-          <p>&copy; 2026 Asymmetrical Corp. All rights reserved.</p>
+          <p>&copy; 2026 Asymmetricalcorp. All rights reserved.</p>
           <p className="footer__powered">Powered by AI</p>
         </div>
       </div>

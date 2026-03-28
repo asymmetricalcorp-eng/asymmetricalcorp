@@ -48,7 +48,7 @@ export default function About() {
           </h2>
           <p className="section-desc">
             En un mercado donde todos juegan con las mismas reglas, nosotros cambiamos el tablero.
-            Asymmetrical Corp nace de la idea de que la verdadera ventaja competitiva
+            Asymmetricalcorp nace de la idea de que la verdadera ventaja competitiva
             no es ser mejor en lo mismo — es hacer lo diferente.
           </p>
         </div>

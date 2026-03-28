@@ -25,9 +25,8 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__container">
         <a href="#hero" className="navbar__logo">
-          <span className="navbar__bracket">[</span>
-          <span className="navbar__logo-text">ASYMMETRICAL</span>
-          <span className="navbar__bracket">]</span>
+          <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Asymmetricalcorp" className="navbar__logo-icon" />
+          <span className="navbar__logo-text">ASYMMETRICALCORP</span>
         </a>
 
         <div className="navbar__links">
@@ -36,6 +35,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
+          <a href="#contact" className="btn btn-primary btn-nav">Iniciar Proyecto</a>
         </div>
 
         <button
@@ -65,6 +65,9 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
+            <a href="#contact" className="navbar__mobile-link navbar__mobile-cta">
+              Iniciar Proyecto
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
