@@ -6,8 +6,8 @@ const clients = [
   {
     name: 'Mogaco',
     industry: 'Productos Quimicos & Limpieza',
-    website: 'mogaco.com.mx',
-    services: ['ERP + CRM Integral', 'Chatbot IA con 1,035+ productos', 'Sistema de cotizaciones automatico', 'Web app con recomendaciones AI', 'Pagina web mogaco.com.mx'],
+    website: 'mogaco.mx',
+    services: ['ERP + CRM Integral', 'Chatbot IA con 1,035+ productos', 'Sistema de cotizaciones automatico', 'Web app con recomendaciones AI', 'Pagina web mogaco.mx'],
     quote: 'Un ecosistema completo que transformo nuestra operacion: desde la gestion de inventarios hasta un chatbot inteligente que atiende a nuestros clientes 24/7.',
   },
 ]

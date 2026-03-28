@@ -12,7 +12,9 @@ const capabilities = [
   { icon: '✂', title: 'Generador de Clips con IA', desc: 'Extrae y genera clips optimizados para redes sociales a partir de videos largos, automaticamente.' },
   { icon: '📊', title: 'Tendencias & Hashtags', desc: 'Analisis de tendencias de TikTok, Instagram y Facebook con recomendaciones automaticas.' },
   { icon: '📅', title: 'Publicacion Automatica', desc: 'Calendario de contenido inteligente con horarios optimos por plataforma.' },
-  { icon: '🎨', title: 'Editor de Fotos y Video Profesional', desc: 'Suite de edicion integrada con seleccion lazo, recorte, zoom, timeline de video y herramientas profesionales.' },
+  { icon: '🎨', title: 'Editor de Fotos Profesional', desc: 'Suite de edicion de imagenes con seleccion lazo, recorte, zoom y herramientas profesionales para crear visuales impactantes.' },
+  { icon: '🎞', title: 'Editor de Video Profesional', desc: 'Edicion de video con timeline, cortes, transiciones y ajustes de audio para producir contenido listo para publicar.' },
+  { icon: '🗂', title: 'Galeria Organizada', desc: 'Todos tus assets en un solo lugar. Galeria inteligente con organizacion por proyecto, etiquetas y busqueda — perfecta para no perder el orden y tener todo tu contenido accesible al instante.' },
 ]
 
 export default function ACIA() {
