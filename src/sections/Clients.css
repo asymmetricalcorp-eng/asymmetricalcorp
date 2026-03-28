@@ -45,19 +45,22 @@
   color: var(--accent-purple);
 }
 
-.clients__logo-placeholder {
-  width: 60px;
-  height: 60px;
+.clients__logo-mogaco {
+  width: 64px;
+  height: 64px;
   border-radius: 12px;
-  background: var(--gradient-primary);
+  background: rgba(10, 124, 255, 0.08);
+  border: 1px solid rgba(10, 124, 255, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: white;
   flex-shrink: 0;
+  transition: all 0.3s;
+}
+
+.clients__logo-mogaco:hover {
+  background: rgba(10, 124, 255, 0.12);
+  border-color: rgba(10, 124, 255, 0.4);
 }
 
 .clients__services {

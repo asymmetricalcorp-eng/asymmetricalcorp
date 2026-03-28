@@ -15,7 +15,7 @@ const metrics = [
   { value: '99.9%', label: 'Disponibilidad' },
   { value: '<50ms', label: 'Latencia' },
   { value: '140+', label: 'Tests' },
-  { value: '256-bit', label: 'Encriptacion' },
+  { value: '512-bit', label: 'Encriptacion' },
 ]
 
 export default function Tech() {

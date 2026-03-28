@@ -6,9 +6,13 @@ const capabilities = [
   { icon: '🖼', title: 'Generacion de Imagenes', desc: 'Stable Diffusion local con txt2img e img2img. Crea visuales unicos para campanas.' },
   { icon: '🎬', title: 'Generacion de Video', desc: 'Wan 2.1 para texto-a-video e imagen-a-video. Contenido animado profesional automatizado.' },
   { icon: '🤖', title: 'Agente IA con 18 Tools', desc: 'LLM local que crea, publica, agenda y optimiza contenido con lenguaje natural.' },
+  { icon: '🎙', title: 'Narrador con IA', desc: 'Genera narraciones profesionales con voces sinteticas realistas para tus anuncios y contenido multimedia.' },
+  { icon: '📝', title: 'Generador de Guiones con IA', desc: 'Crea guiones persuasivos y estructurados automaticamente, adaptados al tono de tu marca y plataforma.' },
+  { icon: '🎛', title: 'Modulador de Voz con IA', desc: 'Ajusta tono, velocidad, emocion y estilo de las voces generadas para cada tipo de contenido.' },
+  { icon: '✂', title: 'Generador de Clips con IA', desc: 'Extrae y genera clips optimizados para redes sociales a partir de videos largos, automaticamente.' },
   { icon: '📊', title: 'Tendencias & Hashtags', desc: 'Analisis de tendencias de TikTok, Instagram y Facebook con recomendaciones automaticas.' },
   { icon: '📅', title: 'Publicacion Automatica', desc: 'Calendario de contenido inteligente con horarios optimos por plataforma.' },
-  { icon: '🎨', title: 'Editor de Fotos', desc: 'Suite de edicion integrada con seleccion lazo, recorte y zoom profesional.' },
+  { icon: '🎨', title: 'Editor de Fotos y Video Profesional', desc: 'Suite de edicion integrada con seleccion lazo, recorte, zoom, timeline de video y herramientas profesionales.' },
 ]
 
 export default function ACIA() {

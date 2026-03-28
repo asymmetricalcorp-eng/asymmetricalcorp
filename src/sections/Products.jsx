@@ -5,8 +5,9 @@ import './Products.css'
 const features = [
   { num: '01', title: 'ERP Inteligente', desc: 'Inventarios, compras, ventas, finanzas y contabilidad con predicciones AI que anticipan la demanda.' },
   { num: '02', title: 'CRM Predictivo', desc: 'Pipeline de ventas con scoring automatico, seguimiento de clientes y machine learning para conversion.' },
-  { num: '03', title: 'Analytics en Tiempo Real', desc: 'Dashboards interactivos con KPIs, reportes automaticos y alertas inteligentes cuando algo importa.' },
-  { num: '04', title: 'Automatizacion Total', desc: 'Workflows que corren solos, integracion con APIs externas y procesos sin intervencion humana.' },
+  { num: '03', title: 'Modulos Personalizados', desc: 'Cada empresa opera diferente. Creamos modulos a medida que se adaptan a los flujos y necesidades unicas de tu negocio, simplificando las tareas cotidianas que mas tiempo te consumen.' },
+  { num: '04', title: 'Analytics en Tiempo Real', desc: 'Dashboards interactivos con KPIs, reportes automaticos y alertas inteligentes cuando algo importa.' },
+  { num: '05', title: 'Automatizacion Total', desc: 'Workflows que corren solos, integracion con APIs externas y procesos sin intervencion humana.' },
 ]
 
 export default function Products() {

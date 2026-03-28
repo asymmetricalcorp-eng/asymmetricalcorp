@@ -7,7 +7,7 @@ const clients = [
     name: 'Mogaco',
     industry: 'Productos Quimicos & Limpieza',
     website: 'mogaco.com.mx',
-    services: ['ERP + CRM Integral', 'Chatbot IA con 1,035+ productos', 'Sistema de cotizaciones automatico', 'Web app con recomendaciones AI'],
+    services: ['ERP + CRM Integral', 'Chatbot IA con 1,035+ productos', 'Sistema de cotizaciones automatico', 'Web app con recomendaciones AI', 'Pagina web mogaco.com.mx'],
     quote: 'Un ecosistema completo que transformo nuestra operacion: desde la gestion de inventarios hasta un chatbot inteligente que atiende a nuestros clientes 24/7.',
   },
 ]
@@ -48,8 +48,16 @@ export default function Clients() {
                     {c.website}
                   </a>
                 </div>
-                <div className="clients__logo-placeholder">
-                  <span>M</span>
+                <div className="clients__logo-mogaco">
+                  <svg width="52" height="52" viewBox="0 0 38 38" fill="none">
+                    <circle cx="19" cy="19" r="3.5" fill="#60A5FA" />
+                    <ellipse cx="19" cy="19" rx="17" ry="6" stroke="#0A7CFF" strokeWidth="1.5" fill="none" />
+                    <ellipse cx="19" cy="19" rx="17" ry="6" stroke="#38BDF8" strokeWidth="1.4" fill="none" transform="rotate(60 19 19)" />
+                    <ellipse cx="19" cy="19" rx="17" ry="6" stroke="#818CF8" strokeWidth="1.4" fill="none" transform="rotate(-60 19 19)" />
+                    <circle cx="36" cy="19" r="2" fill="#60A5FA" />
+                    <circle cx="7.5" cy="10" r="2" fill="#38BDF8" />
+                    <circle cx="7.5" cy="28" r="2" fill="#818CF8" />
+                  </svg>
                 </div>
               </div>
 
