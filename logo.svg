@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="grad-main" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6c5ce7"/>
+      <stop offset="100%" stop-color="#00d4ff"/>
+    </linearGradient>
+    <linearGradient id="grad-accent" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#6c5ce7"/>
+    </linearGradient>
+    <linearGradient id="grad-glow" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#6c5ce7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Asymmetric C: top arm is thick and short, bottom arm is thin and extends further -->
+  <!-- The left curve has a tighter radius at top, wider sweep at bottom -->
+  <!-- This creates deliberate visual imbalance -->
+
+  <!-- Main C body - asymmetric stroke built from a filled shape -->
+  <path
+    d="
+      M 340 108
+      C 300 72, 240 52, 190 60
+      C 130 72, 82 120, 62 190
+      C 42 260, 56 340, 100 398
+      C 140 450, 200 472, 270 470
+      C 310 468, 345 454, 380 430
+      L 358 400
+      C 330 418, 298 432, 264 434
+      C 210 438, 158 410, 130 368
+      C 100 322, 88 264, 102 206
+      C 116 148, 156 110, 210 98
+      C 250 90, 290 100, 320 118
+      Z
+    "
+    fill="url(#grad-main)"
+  />
+
+  <!-- Top arm terminator - thick, blunt, bold -->
+  <rect x="318" y="92" width="48" height="36" rx="4" fill="url(#grad-main)" transform="rotate(-32, 340, 110)"/>
+
+  <!-- Bottom arm terminator - thin, sharp, extends further right -->
+  <path
+    d="
+      M 356 396
+      L 420 370
+      L 418 384
+      L 358 406
+      Z
+    "
+    fill="url(#grad-accent)"
+  />
+
+  <!-- Glitch/break element - a gap slice through the upper-left curve -->
+  <!-- This adds the tech-forward, disrupted feel -->
+  <rect x="56" y="218" width="90" height="8" rx="2" fill="#0a0a0f" transform="rotate(-12, 100, 222)" opacity="0"/>
+
+  <!-- Digital disruption lines - three offset horizontal slashes on the left curve -->
+  <path d="M 72 230 L 120 226" stroke="url(#grad-accent)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 68 248 L 130 242" stroke="url(#grad-accent)" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 76 264 L 110 261" stroke="url(#grad-accent)" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Accent dot cluster near top arm - tech detail -->
+  <circle cx="360" cy="88" r="5" fill="#00d4ff" opacity="0.8"/>
+  <circle cx="376" cy="78" r="3" fill="#6c5ce7" opacity="0.6"/>
+  <circle cx="370" cy="98" r="2.5" fill="#00d4ff" opacity="0.5"/>
+
+  <!-- Subtle inner echo/shadow of the C for depth -->
+  <path
+    d="
+      M 326 136
+      C 294 112, 248 96, 214 102
+      C 162 114, 124 150, 108 208
+      C 92 268, 102 334, 136 380
+      C 164 418, 210 440, 264 438
+    "
+    fill="none"
+    stroke="url(#grad-glow)"
+    stroke-width="1.5"
+    opacity="0.4"
+  />
+</svg>
