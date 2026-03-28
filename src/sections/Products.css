@@ -1,0 +1,116 @@
+.products__showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+/* Terminal mockup */
+.products__terminal {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.terminal__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.terminal__dots {
+  display: flex;
+  gap: 6px;
+}
+
+.terminal__dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.terminal__dots span:nth-child(1) { background: #ff5f57; }
+.terminal__dots span:nth-child(2) { background: #febc2e; }
+.terminal__dots span:nth-child(3) { background: #28c840; }
+
+.terminal__title {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+}
+
+.terminal__body {
+  padding: 24px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+
+.code-line { min-height: 1.8em; }
+.kw { color: var(--accent-purple); }
+.str { color: var(--accent-cyan); }
+.fn { color: #ffd700; }
+.cmt { color: var(--text-muted); font-style: italic; }
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+  color: var(--accent-cyan);
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Features list */
+.products__features {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.products__feature {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.products__feature:hover {
+  background: var(--bg-card);
+  border-color: var(--border-color);
+}
+
+.products__feature-num {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  color: var(--accent-cyan);
+  padding-top: 4px;
+  min-width: 28px;
+}
+
+.products__feature h4 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.products__feature p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 968px) {
+  .products__showcase {
+    grid-template-columns: 1fr;
+  }
+}
